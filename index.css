@@ -3,3 +3,226 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 300px;
+}
+
+/*=================== REUSABLE CLASS ==================================*/
+h2 {
+  font-size: 48px;
+  margin-top: 15px;
+  margin-right: 41px;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  font-weight: 100;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/*=================== HERO SECTION ==================================*/
+.parallax {
+  background-image: url(img/hero.webp);
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  max-width: 210px;
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+.flex-end {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+  margin-left: 13px;
+  margin-right: 40px;
+}
+
+.flex-end h1 {
+  font-size: 80px;
+  text-transform: capitalize;
+}
+
+.flex-end span {
+  color: red;
+}
+
+.flex-end p {
+  max-width: 473px;
+  padding-bottom: 30px;
+}
+
+.link {
+  color: white;
+  background: red;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 21px;
+}
+
+.link:hover {
+  background: white;
+  color: red;
+  border: 1px solid red;
+}
+
+/*=================== PRODUCT INFO SECTION ==================================*/
+.product-info-container {
+  padding: 0px 16px;
+  height: 120vh;
+}
+
+.product-info-container p {
+  padding-bottom: 40px;
+  max-width: 473px;
+}
+
+.flex {
+  margin-bottom: 40px;
+}
+
+.flex-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================== APPLE SECTION ==================================*/
+.apple-container {
+  padding: 0px 16px;
+  margin-bottom: 40px;
+}
+
+.img-bg {
+  background-image: url(img/beats-bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-bg h2 {
+  margin-top: 30px;
+}
+
+.img-bg p {
+  max-width: 473px;
+  margin-bottom: 40px;
+}
+
+.apple-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================== OVERVIEWs SECTION ==================================*/
+.parallax2 {
+  background-image: url(img/image8.jpg);
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overview-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-container p {
+  max-width: 700px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*=================== COLORS SECTION ==================================*/
+.grid {
+  text-align: center;
+}
+
+.grid-item p {
+  text-transform: uppercase;
+}
+.price {
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+  .flex-end {
+    margin-top: 105px;
+    margin-right: 75px;
+  }
+  .product-info-container {
+    height: 100vh;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+  .apple-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .apple-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-bg {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    padding: 0px 65px;
+  }
+}
