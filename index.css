@@ -6,7 +6,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 300px;
 }
 
 /*=================== REUSABLE CLASS ==================================*/
@@ -142,7 +141,7 @@ h4 {
   margin-right: auto;
 }
 
-/*=================== OVERVIEWs SECTION ==================================*/
+/*=================== OVERVIEW SECTION ==================================*/
 .parallax2 {
   background-image: url(img/image8.jpg);
   min-height: 600px;
@@ -168,6 +167,9 @@ h4 {
 }
 
 /*=================== COLORS SECTION ==================================*/
+.colors {
+  height: 150vh;
+}
 .grid {
   text-align: center;
 }
@@ -179,10 +181,95 @@ h4 {
   font-weight: bold;
 }
 
+/*=================== HIGHLIGHTS SECTION ==================================*/
+.highlights {
+  padding: 0px 16px;
+  margin-bottom: 40px;
+}
+
+.highlights-flex {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  padding-bottom: 30px;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.flex-reverse img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/*=================== IMAGE SECTION ==================================*/
+.parallax3 {
+  background-image: url(img/gridimg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+/*=================== TECH SPECS SECTION ==================================*/
+
+.info-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.features-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.info-list,
+.features-list {
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+.specs-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=================== FOOTER SECTION ==================================*/
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  padding: 20px 0px;
+}
+/*=================== MEDIA QUERIES ==================================*/
 @media (min-width: 900px) {
   .flex-end {
     margin-top: 105px;
-    margin-right: 75px;
+    margin-right: 100px;
   }
   .product-info-container {
     height: 100vh;
@@ -196,6 +283,7 @@ h4 {
     width: 100%;
     max-width: 700px;
     height: auto;
+    margin: 0;
   }
   .apple-container {
     margin-top: 60px;
@@ -212,6 +300,16 @@ h4 {
   .img-bg {
     margin-right: 30px;
   }
+  .apple-container img {
+    margin: 0;
+  }
+
+  .flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 800px) {
@@ -219,10 +317,39 @@ h4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .colors {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .flex-items2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-flex {
+    padding: 0px 50px;
+    margin-top: 98px;
+  }
 }
 
 @media (min-width: 1100px) {
   .grid {
     padding: 0px 65px;
+  }
+}
+
+@media (min-width: 1333px) {
+  .specs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+  }
+  .specs-container img {
+    margin: 0;
   }
 }
