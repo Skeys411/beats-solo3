@@ -283,6 +283,9 @@ h4 {
 }
 /*=================== MEDIA QUERIES ==================================*/
 @media (max-width: 555px) {
+  h2 {
+    font-size: 40px;
+  }
   .flex-end {
     padding: 0px 20px;
     justify-content: center;
@@ -292,8 +295,10 @@ h4 {
     font-size: 50px;
     margin-top: 30px;
   }
-  h2 {
-    font-size: 40px;
+  .parallax3 {
+    background-image: none;
+    background: black;
+    min-height: 200px;
   }
 }
 
