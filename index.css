@@ -295,6 +295,9 @@ h4 {
     font-size: 50px;
     margin-top: 30px;
   }
+}
+
+@media (max-width: 800px) {
   .parallax3 {
     background-image: none;
     background: black;
